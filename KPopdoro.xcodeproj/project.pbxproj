@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */; };
 		D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */; };
-		D0623BDC25FBEE4100A1EFEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BDB25FBEE4100A1EFEF /* ViewController.swift */; };
+		D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BDB25FBEE4100A1EFEF /* TimerController.swift */; };
 		D0623BDF25FBEE4100A1EFEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0623BDD25FBEE4100A1EFEF /* Main.storyboard */; };
 		D0623BE125FBEE4400A1EFEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0623BE025FBEE4400A1EFEF /* Assets.xcassets */; };
 		D0623BE425FBEE4400A1EFEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0623BE225FBEE4400A1EFEF /* LaunchScreen.storyboard */; };
 		D0623BEF25FBEE4500A1EFEF /* KPopdoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BEE25FBEE4500A1EFEF /* KPopdoroTests.swift */; };
 		D0623BFA25FBEE4500A1EFEF /* KPopdoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */; };
+		D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4934B26055A5E00572CA0 /* IdolController.swift */; };
+		D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935026055A9A00572CA0 /* IdolView.swift */; };
+		D0E4935626055B6400572CA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935526055B6400572CA0 /* Theme.swift */; };
+		D0E4935D26055B7F00572CA0 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935C26055B7F00572CA0 /* ThemeProtocol.swift */; };
+		D0E49362260A99F400572CA0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49361260A99F400572CA0 /* TimerView.swift */; };
+		D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49366260A9AF600572CA0 /* HomeController.swift */; };
+		D0E4936C260A9B2500572CA0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4936B260A9B2500572CA0 /* HomeView.swift */; };
+		D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49370260AA59200572CA0 /* ViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,7 @@
 		D0623BD425FBEE4100A1EFEF /* KPopdoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPopdoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0623BDB25FBEE4100A1EFEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0623BDB25FBEE4100A1EFEF /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		D0623BDE25FBEE4100A1EFEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0623BE025FBEE4400A1EFEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0623BE325FBEE4400A1EFEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		D0623BF525FBEE4500A1EFEF /* KPopdoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPopdoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopdoroUITests.swift; sourceTree = "<group>"; };
 		D0623BFB25FBEE4500A1EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E4934B26055A5E00572CA0 /* IdolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolController.swift; sourceTree = "<group>"; };
+		D0E4935026055A9A00572CA0 /* IdolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolView.swift; sourceTree = "<group>"; };
+		D0E4935526055B6400572CA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D0E4935C26055B7F00572CA0 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		D0E49361260A99F400572CA0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D0E49366260A9AF600572CA0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D0E4936B260A9B2500572CA0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D0E49370260AA59200572CA0 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,12 @@
 		D0623BD625FBEE4100A1EFEF /* KPopdoro */ = {
 			isa = PBXGroup;
 			children = (
-				D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */,
-				D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */,
-				D0623BDB25FBEE4100A1EFEF /* ViewController.swift */,
+				D0E49375260AD79000572CA0 /* Managers */,
+				D0623C0A25FBEE4C00A1EFEF /* Models */,
+				D0623C0B25FBEE5300A1EFEF /* Views */,
+				D0623C1225FBF37800A1EFEF /* ViewModels */,
+				D0623C0F25FBEE5800A1EFEF /* Controllers */,
+				D0623C1025FBF35E00A1EFEF /* Resources */,
 				D0623BDD25FBEE4100A1EFEF /* Main.storyboard */,
 				D0623BE025FBEE4400A1EFEF /* Assets.xcassets */,
 				D0623BE225FBEE4400A1EFEF /* LaunchScreen.storyboard */,
@@ -126,6 +145,59 @@
 				D0623BFB25FBEE4500A1EFEF /* Info.plist */,
 			);
 			path = KPopdoroUITests;
+			sourceTree = "<group>";
+		};
+		D0623C0A25FBEE4C00A1EFEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0623C0B25FBEE5300A1EFEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0E4935026055A9A00572CA0 /* IdolView.swift */,
+				D0E49361260A99F400572CA0 /* TimerView.swift */,
+				D0E4936B260A9B2500572CA0 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0623C0F25FBEE5800A1EFEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0623BDB25FBEE4100A1EFEF /* TimerController.swift */,
+				D0E4934B26055A5E00572CA0 /* IdolController.swift */,
+				D0E49366260A9AF600572CA0 /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D0623C1025FBF35E00A1EFEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */,
+				D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */,
+				D0E4935526055B6400572CA0 /* Theme.swift */,
+				D0E4935C26055B7F00572CA0 /* ThemeProtocol.swift */,
+				D0E49370260AA59200572CA0 /* ViewController+Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0623C1225FBF37800A1EFEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D0E49375260AD79000572CA0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0623BDC25FBEE4100A1EFEF /* ViewController.swift in Sources */,
+				D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */,
+				D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */,
 				D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */,
+				D0E4936C260A9B2500572CA0 /* HomeView.swift in Sources */,
+				D0E4935D26055B7F00572CA0 /* ThemeProtocol.swift in Sources */,
+				D0E4935626055B6400572CA0 /* Theme.swift in Sources */,
+				D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */,
 				D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */,
+				D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */,
+				D0E49362260A99F400572CA0 /* TimerView.swift in Sources */,
+				D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

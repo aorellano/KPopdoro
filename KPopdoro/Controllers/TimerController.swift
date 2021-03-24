@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TimerController: UIViewController {
+    let timerView = TimerView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    override func loadView() {
+        view = timerView
+    }
 }
 
