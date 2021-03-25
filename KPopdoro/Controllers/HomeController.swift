@@ -7,12 +7,16 @@
 
 import UIKit
 
-class HomeController: UIViewController {
+class HomeController: UIViewController, TimerProtocol {
     let homeView = HomeView()
+    var time = "12:00"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupChildViewControllers()
+        setupActions()
     }
     
     private func setupChildViewControllers() {
@@ -20,9 +24,19 @@ class HomeController: UIViewController {
         add(IdolController())
     }
     
-    @objc func buttonPressed() {
-        print("hello")
+    private func setupActions() {
+        homeView.bottomButton.addTarget(self, action: #selector(HomeController.buttonPressed), for: .touchUpInside)
     }
+    
+    @objc func buttonPressed() {
+        let vc = ProjectsController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func fire() {
+        print("hi")
+    }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

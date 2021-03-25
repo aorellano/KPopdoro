@@ -15,6 +15,8 @@
 		D0623BE425FBEE4400A1EFEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0623BE225FBEE4400A1EFEF /* LaunchScreen.storyboard */; };
 		D0623BEF25FBEE4500A1EFEF /* KPopdoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BEE25FBEE4500A1EFEF /* KPopdoroTests.swift */; };
 		D0623BFA25FBEE4500A1EFEF /* KPopdoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */; };
+		D0A7C952260C3D4A009AFCA5 /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */; };
+		D0A7C957260C5707009AFCA5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C956260C5707009AFCA5 /* Project.swift */; };
 		D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4934B26055A5E00572CA0 /* IdolController.swift */; };
 		D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935026055A9A00572CA0 /* IdolView.swift */; };
 		D0E4935626055B6400572CA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935526055B6400572CA0 /* Theme.swift */; };
@@ -23,6 +25,10 @@
 		D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49366260A9AF600572CA0 /* HomeController.swift */; };
 		D0E4936C260A9B2500572CA0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4936B260A9B2500572CA0 /* HomeView.swift */; };
 		D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49370260AA59200572CA0 /* ViewController+Extension.swift */; };
+		D0E49377260ADDAC00572CA0 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49376260ADDAC00572CA0 /* TimerManager.swift */; };
+		D0E4937F260AEF5600572CA0 /* TimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4937E260AEF5600572CA0 /* TimerProtocol.swift */; };
+		D0E49387260C065C00572CA0 /* ProjectsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49386260C065C00572CA0 /* ProjectsController.swift */; };
+		D0E49399260C0E0900572CA0 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E49398260C0E0900572CA0 /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,8 @@
 		D0623BF525FBEE4500A1EFEF /* KPopdoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPopdoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopdoroUITests.swift; sourceTree = "<group>"; };
 		D0623BFB25FBEE4500A1EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
+		D0A7C956260C5707009AFCA5 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		D0E4934B26055A5E00572CA0 /* IdolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolController.swift; sourceTree = "<group>"; };
 		D0E4935026055A9A00572CA0 /* IdolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolView.swift; sourceTree = "<group>"; };
 		D0E4935526055B6400572CA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -65,6 +73,10 @@
 		D0E49366260A9AF600572CA0 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		D0E4936B260A9B2500572CA0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D0E49370260AA59200572CA0 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		D0E49376260ADDAC00572CA0 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		D0E4937E260AEF5600572CA0 /* TimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimerProtocol.swift; path = ../../../../TimerProtocol.swift; sourceTree = "<group>"; };
+		D0E49386260C065C00572CA0 /* ProjectsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsController.swift; sourceTree = "<group>"; };
+		D0E49398260C0E0900572CA0 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,7 @@
 		D0623C0A25FBEE4C00A1EFEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D0A7C956260C5707009AFCA5 /* Project.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +173,7 @@
 				D0E4935026055A9A00572CA0 /* IdolView.swift */,
 				D0E49361260A99F400572CA0 /* TimerView.swift */,
 				D0E4936B260A9B2500572CA0 /* HomeView.swift */,
+				D0E49398260C0E0900572CA0 /* ProjectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +184,8 @@
 				D0623BDB25FBEE4100A1EFEF /* TimerController.swift */,
 				D0E4934B26055A5E00572CA0 /* IdolController.swift */,
 				D0E49366260A9AF600572CA0 /* HomeController.swift */,
+				D0E49386260C065C00572CA0 /* ProjectsController.swift */,
+				D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 				D0E4935526055B6400572CA0 /* Theme.swift */,
 				D0E4935C26055B7F00572CA0 /* ThemeProtocol.swift */,
 				D0E49370260AA59200572CA0 /* ViewController+Extension.swift */,
+				D0E4937E260AEF5600572CA0 /* TimerProtocol.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +213,7 @@
 		D0E49375260AD79000572CA0 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D0E49376260ADDAC00572CA0 /* TimerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -330,15 +348,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E49399260C0E0900572CA0 /* ProjectsView.swift in Sources */,
 				D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */,
 				D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */,
 				D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */,
+				D0E49387260C065C00572CA0 /* ProjectsController.swift in Sources */,
 				D0E4936C260A9B2500572CA0 /* HomeView.swift in Sources */,
+				D0E4937F260AEF5600572CA0 /* TimerProtocol.swift in Sources */,
 				D0E4935D26055B7F00572CA0 /* ThemeProtocol.swift in Sources */,
+				D0A7C952260C3D4A009AFCA5 /* ProjectsDataSource.swift in Sources */,
 				D0E4935626055B6400572CA0 /* Theme.swift in Sources */,
 				D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */,
 				D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */,
 				D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */,
+				D0E49377260ADDAC00572CA0 /* TimerManager.swift in Sources */,
+				D0A7C957260C5707009AFCA5 /* Project.swift in Sources */,
 				D0E49362260A99F400572CA0 /* TimerView.swift in Sources */,
 				D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */,
 			);

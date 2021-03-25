@@ -10,7 +10,7 @@ import UIKit
 class HomeView: UIView {
     private let timerView = TimerView()
     private let idolView = IdolView()
-    private var bottomButton = UIButton()
+    var bottomButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,9 +49,10 @@ class HomeView: UIView {
         setupButtonImage()
         bottomButton.backgroundColor = Theme.tintColorPink
         bottomButton.layer.cornerRadius = 42.5
-        bottomButton.addTarget(self, action: #selector(HomeController.buttonPressed), for: .touchUpInside)
-        bottomButton.translatesAutoresizingMaskIntoConstraints = false
         positionButton()
+        
+        bottomButton.translatesAutoresizingMaskIntoConstraints = false
+        
     }
     
     private func positionButton() {
