@@ -9,7 +9,7 @@ import UIKit
 
 class ProjectsView: UIView {
     var tableView = UITableView()
-    var addButton = UIButton()
+    private var addButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,14 +45,15 @@ class ProjectsView: UIView {
 
     private func setupTableView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(ProjectCell.self, forCellReuseIdentifier: "Cell")
+        tableView.backgroundColor = Theme.backgroundColor
         positionTableView()
     }
     
     private func positionTableView() {
         addSubview(tableView)
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: addButton.topAnchor)

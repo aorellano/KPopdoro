@@ -8,15 +8,29 @@
 import UIKit
 
 class ProjectsController: UIViewController {
-    let projectsView = ProjectsView()
-    let dataSource = ProjectsDataSource()
+    private let projectsView = ProjectsView()
+    private let dataSource = ProjectsDataSource()
+    var projectManager: ProjectManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTitle()
         projectsView.tableView.dataSource = dataSource
+        projectsView.tableView.delegate = self
+//        projectManager?.createProject()
+//        let data = ProjectManager(project: ProjectType.project(Project(title: "Hello", color: .blue)))
+//        data.createProject()
     }
-
+    
+//    init(projectManager: ProjectManager) {
+//        self.projectManager = projectManager
+//        super.init(nibName: nil, bundle: nil)
+//    }
+    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     private func setupTitle() {
         title = "Projects"
         let textAttributes = [NSAttributedString.Key.foregroundColor : Theme.textColor]
@@ -38,8 +52,8 @@ class ProjectsController: UIViewController {
     
 }
 
-extension ProjectsController {
-    fileprivate enum Section {
-        case main
+extension ProjectsController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
 }

@@ -15,8 +15,14 @@
 		D0623BE425FBEE4400A1EFEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0623BE225FBEE4400A1EFEF /* LaunchScreen.storyboard */; };
 		D0623BEF25FBEE4500A1EFEF /* KPopdoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BEE25FBEE4500A1EFEF /* KPopdoroTests.swift */; };
 		D0623BFA25FBEE4500A1EFEF /* KPopdoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */; };
+		D07CEDDA260D795100526E2F /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDD9260D795100526E2F /* ProjectManager.swift */; };
+		D07CEDE3260D7F2600526E2F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDE2260D7F2600526E2F /* Task.swift */; };
+		D07CEDEE260D936900526E2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDED260D936900526E2F /* Data.swift */; };
+		D07CEDF3260DAB3100526E2F /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDF2260DAB3100526E2F /* ProjectViewModel.swift */; };
 		D0A7C952260C3D4A009AFCA5 /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */; };
 		D0A7C957260C5707009AFCA5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C956260C5707009AFCA5 /* Project.swift */; };
+		D0A7C95D260C6498009AFCA5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C95C260C6498009AFCA5 /* MockData.swift */; };
+		D0A7C967260D4351009AFCA5 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C966260D4351009AFCA5 /* ProjectCell.swift */; };
 		D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4934B26055A5E00572CA0 /* IdolController.swift */; };
 		D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935026055A9A00572CA0 /* IdolView.swift */; };
 		D0E4935626055B6400572CA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935526055B6400572CA0 /* Theme.swift */; };
@@ -63,8 +69,14 @@
 		D0623BF525FBEE4500A1EFEF /* KPopdoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPopdoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopdoroUITests.swift; sourceTree = "<group>"; };
 		D0623BFB25FBEE4500A1EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07CEDD9260D795100526E2F /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
+		D07CEDE2260D7F2600526E2F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D07CEDED260D936900526E2F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D07CEDF2260DAB3100526E2F /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
 		D0A7C956260C5707009AFCA5 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		D0A7C95C260C6498009AFCA5 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		D0A7C966260D4351009AFCA5 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		D0E4934B26055A5E00572CA0 /* IdolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolController.swift; sourceTree = "<group>"; };
 		D0E4935026055A9A00572CA0 /* IdolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolView.swift; sourceTree = "<group>"; };
 		D0E4935526055B6400572CA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -127,8 +139,9 @@
 		D0623BD625FBEE4100A1EFEF /* KPopdoro */ = {
 			isa = PBXGroup;
 			children = (
-				D0E49375260AD79000572CA0 /* Managers */,
 				D0623C0A25FBEE4C00A1EFEF /* Models */,
+				D0A7C96B260D43DF009AFCA5 /* Projects */,
+				D0E49375260AD79000572CA0 /* Managers */,
 				D0623C0B25FBEE5300A1EFEF /* Views */,
 				D0623C1225FBF37800A1EFEF /* ViewModels */,
 				D0623C0F25FBEE5800A1EFEF /* Controllers */,
@@ -163,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				D0A7C956260C5707009AFCA5 /* Project.swift */,
+				D0A7C95C260C6498009AFCA5 /* MockData.swift */,
+				D07CEDE2260D7F2600526E2F /* Task.swift */,
+				D07CEDED260D936900526E2F /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,7 +189,6 @@
 				D0E4935026055A9A00572CA0 /* IdolView.swift */,
 				D0E49361260A99F400572CA0 /* TimerView.swift */,
 				D0E4936B260A9B2500572CA0 /* HomeView.swift */,
-				D0E49398260C0E0900572CA0 /* ProjectsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,8 +199,6 @@
 				D0623BDB25FBEE4100A1EFEF /* TimerController.swift */,
 				D0E4934B26055A5E00572CA0 /* IdolController.swift */,
 				D0E49366260A9AF600572CA0 /* HomeController.swift */,
-				D0E49386260C065C00572CA0 /* ProjectsController.swift */,
-				D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,14 +219,27 @@
 		D0623C1225FBF37800A1EFEF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D07CEDF2260DAB3100526E2F /* ProjectViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D0A7C96B260D43DF009AFCA5 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				D0E49386260C065C00572CA0 /* ProjectsController.swift */,
+				D0A7C951260C3D4A009AFCA5 /* ProjectsDataSource.swift */,
+				D0E49398260C0E0900572CA0 /* ProjectsView.swift */,
+				D0A7C966260D4351009AFCA5 /* ProjectCell.swift */,
+			);
+			path = Projects;
 			sourceTree = "<group>";
 		};
 		D0E49375260AD79000572CA0 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				D0E49376260ADDAC00572CA0 /* TimerManager.swift */,
+				D07CEDD9260D795100526E2F /* ProjectManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -349,21 +375,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E49399260C0E0900572CA0 /* ProjectsView.swift in Sources */,
+				D07CEDDA260D795100526E2F /* ProjectManager.swift in Sources */,
 				D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */,
 				D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */,
 				D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */,
 				D0E49387260C065C00572CA0 /* ProjectsController.swift in Sources */,
 				D0E4936C260A9B2500572CA0 /* HomeView.swift in Sources */,
 				D0E4937F260AEF5600572CA0 /* TimerProtocol.swift in Sources */,
+				D0A7C967260D4351009AFCA5 /* ProjectCell.swift in Sources */,
 				D0E4935D26055B7F00572CA0 /* ThemeProtocol.swift in Sources */,
 				D0A7C952260C3D4A009AFCA5 /* ProjectsDataSource.swift in Sources */,
 				D0E4935626055B6400572CA0 /* Theme.swift in Sources */,
 				D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */,
 				D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */,
 				D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */,
+				D07CEDEE260D936900526E2F /* Data.swift in Sources */,
+				D07CEDF3260DAB3100526E2F /* ProjectViewModel.swift in Sources */,
+				D0A7C95D260C6498009AFCA5 /* MockData.swift in Sources */,
 				D0E49377260ADDAC00572CA0 /* TimerManager.swift in Sources */,
 				D0A7C957260C5707009AFCA5 /* Project.swift in Sources */,
 				D0E49362260A99F400572CA0 /* TimerView.swift in Sources */,
+				D07CEDE3260D7F2600526E2F /* Task.swift in Sources */,
 				D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
