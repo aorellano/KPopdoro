@@ -9,7 +9,8 @@ import UIKit
 
 class ProjectsView: UIView {
     var tableView = UITableView()
-    private var addButton = UIButton()
+    var addButton = UIButton()
+    var projectWindow = CreateProjectWindow()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,6 +23,7 @@ class ProjectsView: UIView {
         
         setupAddButton()
         setupTableView()
+        setupProjectWindow()
     }
     
     private func setupAddButton() {
@@ -60,6 +62,15 @@ class ProjectsView: UIView {
         ])
     }
     
+    private func setupProjectWindow() {
+        addSubview(projectWindow)
+        NSLayoutConstraint.activate([
+            projectWindow.topAnchor.constraint(equalTo: topAnchor),
+            projectWindow.leadingAnchor.constraint(equalTo: leadingAnchor),
+            projectWindow.trailingAnchor.constraint(equalTo: trailingAnchor),
+            projectWindow.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

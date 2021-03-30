@@ -15,6 +15,7 @@ class ProjectsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTitle()
+        setupActions()
         projectsView.tableView.dataSource = dataSource
         projectsView.tableView.delegate = self
 //        projectManager?.createProject()
@@ -37,19 +38,29 @@ class ProjectsController: UIViewController {
         navigationController?.navigationBar.largeTitleTextAttributes = textAttributes
     }
     
+    private func setupActions() {
+        projectsView.addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        projectsView.projectWindow.cancelButton.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
+    }
     
+    @objc func addButtonPressed() {
+        projectsView.projectWindow.isHidden = false
+    }
+    
+    @objc func cancelButtonPressed() {
+        projectsView.projectWindow.isHidden = true
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.isHidden = false
         navigationController?.navigationBar.prefersLargeTitles = true
-        
     }
     
     override func loadView() {
         view = projectsView
     }
-    
 }
 
 extension ProjectsController: UITableViewDelegate {
