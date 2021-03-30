@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D007DF862612EAF300905F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007DF852612EAF300905F1A /* UIView+Extension.swift */; };
+		D007DF8B2612F0E000905F1A /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007DF8A2612F0E000905F1A /* BottomButton.swift */; };
 		D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */; };
 		D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */; };
 		D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BDB25FBEE4100A1EFEF /* TimerController.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		D007DF852612EAF300905F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D007DF8A2612F0E000905F1A /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		D0623BD425FBEE4100A1EFEF /* KPopdoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPopdoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BD725FBEE4100A1EFEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0623BD925FBEE4100A1EFEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				D0E4935026055A9A00572CA0 /* IdolView.swift */,
 				D0E49361260A99F400572CA0 /* TimerView.swift */,
 				D0E4936B260A9B2500572CA0 /* HomeView.swift */,
+				D007DF8A2612F0E000905F1A /* BottomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				D0E49377260ADDAC00572CA0 /* TimerManager.swift in Sources */,
 				D0A7C957260C5707009AFCA5 /* Project.swift in Sources */,
 				D0E49362260A99F400572CA0 /* TimerView.swift in Sources */,
+				D007DF8B2612F0E000905F1A /* BottomButton.swift in Sources */,
 				D07CEDE3260D7F2600526E2F /* Task.swift in Sources */,
 				D007DF862612EAF300905F1A /* UIView+Extension.swift in Sources */,
 				D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */,

@@ -32,7 +32,7 @@ class CreateProjectWindow: UIView {
     
     private func setupContainerView() {
         containerView.backgroundColor = Theme.accentColor
-        containerView.layer.cornerRadius = 20
+        containerView.layer.cornerRadius = 30
         containerView.translatesAutoresizingMaskIntoConstraints = false
         positionContainerView()
     }
@@ -85,9 +85,10 @@ class CreateProjectWindow: UIView {
     private func setupCancelButton() {
         cancelButton.setTitle("Cancel", for: .normal)
         cancelButton.backgroundColor = Theme.cancelButtonColor
-        cancelButton.layer.cornerRadius = 10
-        cancelButton.addShadow()
+        cancelButton.layer.cornerRadius = 20
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
+        cancelButton.addShadow()
+        
         positionCancelButton()
     }
     
@@ -104,7 +105,7 @@ class CreateProjectWindow: UIView {
     private func setupCreateButton() {
         createButton.setTitle("Create", for: .normal)
         createButton.backgroundColor = Theme.tintColorPink
-        createButton.layer.cornerRadius = 10
+        createButton.layer.cornerRadius = 20
         createButton.addShadow()
         createButton.translatesAutoresizingMaskIntoConstraints = false
         positionCreateButton()

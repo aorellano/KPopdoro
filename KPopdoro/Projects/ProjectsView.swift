@@ -9,7 +9,7 @@ import UIKit
 
 class ProjectsView: UIView {
     var tableView = UITableView()
-    var addButton = UIButton()
+    var addButton = BottomButton()
     var projectWindow = CreateProjectWindow()
     
     override init(frame: CGRect) {
@@ -21,13 +21,13 @@ class ProjectsView: UIView {
     private func setupViews() {
         backgroundColor = Theme.backgroundColor
         
-        setupAddButton()
+        positionAddButton()
         setupTableView()
         setupProjectWindow()
     }
     
     private func setupAddButton() {
-        let image = UIImage(named: "add")
+        let image = UIImage(named: "play")
         addButton.setImage(image, for: .normal)
         addButton.setTitle(" New Project", for: .normal)
         addButton.setTitleColor(Theme.textColor, for: .normal)
@@ -36,12 +36,12 @@ class ProjectsView: UIView {
     }
     
     private func positionAddButton() {
+        addButton.add(theImage: "play")
         addSubview(addButton)
         
         NSLayoutConstraint.activate([
-            addButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
-            addButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -20),
-            addButton.heightAnchor.constraint(equalToConstant: 50)
+            addButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            addButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -20)
         ])
     }
 

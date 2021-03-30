@@ -14,5 +14,5 @@ class Theme: ThemeProtocol {
     static var tintColorPink = UIColor(red: 255/255, green: 0/255, blue: 216/255, alpha: 1.0)
     static var tintColorBlue = UIColor.systemBlue
     static var checkMarkColor = UIColor(red: 0/255, green: 216/255, blue: 50/255, alpha: 1)
-    static var cancelButtonColor = UIColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1.0)
+    static var cancelButtonColor = UIColor(red: 100/255, green: 100/255, blue: 100/255, alpha: 1.0)
 }

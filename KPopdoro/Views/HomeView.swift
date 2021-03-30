@@ -10,7 +10,7 @@ import UIKit
 class HomeView: UIView {
     private let timerView = TimerView()
     private let idolView = IdolView()
-    var bottomButton = UIButton()
+    var bottomButton = BottomButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,7 +22,7 @@ class HomeView: UIView {
         backgroundColor = Theme.backgroundColor
         setupTimerView()
         setupIdolView()
-        setupBottomButton()
+        positionBottomButton()
     }
     
     private func setupTimerView() {
@@ -45,33 +45,15 @@ class HomeView: UIView {
         ])
     }
     
-    private func setupBottomButton() {
-        setupButtonImage()
-        bottomButton.backgroundColor = Theme.tintColorPink
-        bottomButton.layer.cornerRadius = 42.5
-        positionButton()
-        
-        bottomButton.translatesAutoresizingMaskIntoConstraints = false
-        
-    }
-    
-    private func positionButton() {
+    private func positionBottomButton() {
+        bottomButton.add(theImage: "play")
         addSubview(bottomButton)
         NSLayoutConstraint.activate([
-            bottomButton.widthAnchor.constraint(equalToConstant: 85),
-            bottomButton.heightAnchor.constraint(equalToConstant: 85),
             bottomButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             bottomButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
-    
-    private func setupButtonImage() {
-        let boldFont = UIFont.boldSystemFont(ofSize: 28)
-        let configuration = UIImage.SymbolConfiguration(font: boldFont)
-        let buttonImage = UIImage(systemName: "play", withConfiguration: configuration)?.withTintColor(.white, renderingMode: .alwaysOriginal)
-        bottomButton.setImage(buttonImage, for: .normal)
-    }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
