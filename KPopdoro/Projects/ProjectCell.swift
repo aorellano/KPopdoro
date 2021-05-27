@@ -47,6 +47,7 @@ class ProjectCell: UITableViewCell {
         titleLabel.textColor = Theme.textColor
         positionTitleLabel()
     }
+    
     private func positionTitleLabel() {
         contentView.addSubview(titleLabel)
         

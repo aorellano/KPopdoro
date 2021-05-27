@@ -10,28 +10,18 @@ import UIKit
 class ProjectsController: UIViewController {
     private let projectsView = ProjectsView()
     private let dataSource = ProjectsDataSource()
-    var projectManager: ProjectManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setupTitle()
         setupActions()
-        projectsView.tableView.dataSource = dataSource
+
         projectsView.tableView.delegate = self
-//        projectManager?.createProject()
-//        let data = ProjectManager(project: ProjectType.project(Project(title: "Hello", color: .blue)))
-//        data.createProject()
+        projectsView.tableView.dataSource = dataSource
     }
     
-//    init(projectManager: ProjectManager) {
-//        self.projectManager = projectManager
-//        super.init(nibName: nil, bundle: nil)
-//    }
-    
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-    
+
     private func setupTitle() {
         title = "Projects"
         let textAttributes = [NSAttributedString.Key.foregroundColor : Theme.textColor]
@@ -41,6 +31,7 @@ class ProjectsController: UIViewController {
     private func setupActions() {
         projectsView.addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
         projectsView.projectWindow.cancelButton.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
+        projectsView.projectWindow.createButton.addTarget(self, action: #selector(createProject), for: .touchUpInside)
     }
     
     @objc func addButtonPressed() {
@@ -50,7 +41,22 @@ class ProjectsController: UIViewController {
     @objc func cancelButtonPressed() {
         projectsView.projectWindow.isHidden = true
     }
-
+    
+    @objc func createProject() {
+        if let projectTitle = projectsView.projectWindow.textField.text  {
+            let color = UIColor.random()
+            ProjectManager.createProject(project: Project(title: projectTitle, color: color))
+            addProject()
+        }
+    }
+    
+    private func addProject() {
+        projectsView.projectWindow.isHidden = true
+        projectsView.tableView.performBatchUpdates({
+            projectsView.tableView.insertRows(at: [IndexPath(row: ProjectManager.readProjects().count - 1, section: 0)], with: .automatic)
+        }, completion: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

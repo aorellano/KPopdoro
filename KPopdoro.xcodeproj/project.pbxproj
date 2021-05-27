@@ -17,6 +17,7 @@
 		D0623BE425FBEE4400A1EFEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0623BE225FBEE4400A1EFEF /* LaunchScreen.storyboard */; };
 		D0623BEF25FBEE4500A1EFEF /* KPopdoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BEE25FBEE4500A1EFEF /* KPopdoroTests.swift */; };
 		D0623BFA25FBEE4500A1EFEF /* KPopdoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */; };
+		D079EFFB261AC7420097C773 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D079EFFA261AC7420097C773 /* UIColor+Extension.swift */; };
 		D07CEDDA260D795100526E2F /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDD9260D795100526E2F /* ProjectManager.swift */; };
 		D07CEDE3260D7F2600526E2F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDE2260D7F2600526E2F /* Task.swift */; };
 		D07CEDEE260D936900526E2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07CEDED260D936900526E2F /* Data.swift */; };
@@ -74,6 +75,7 @@
 		D0623BF525FBEE4500A1EFEF /* KPopdoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KPopdoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0623BF925FBEE4500A1EFEF /* KPopdoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopdoroUITests.swift; sourceTree = "<group>"; };
 		D0623BFB25FBEE4500A1EFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D079EFFA261AC7420097C773 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D07CEDD9260D795100526E2F /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
 		D07CEDE2260D7F2600526E2F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D07CEDED260D936900526E2F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -181,10 +183,10 @@
 		D0623C0A25FBEE4C00A1EFEF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D0A7C956260C5707009AFCA5 /* Project.swift */,
 				D0A7C95C260C6498009AFCA5 /* MockData.swift */,
 				D07CEDE2260D7F2600526E2F /* Task.swift */,
 				D07CEDED260D936900526E2F /* Data.swift */,
+				D0A7C956260C5707009AFCA5 /* Project.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +222,7 @@
 				D0E49370260AA59200572CA0 /* ViewController+Extension.swift */,
 				D0E4937E260AEF5600572CA0 /* TimerProtocol.swift */,
 				D007DF852612EAF300905F1A /* UIView+Extension.swift */,
+				D079EFFA261AC7420097C773 /* UIColor+Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				D0E49398260C0E0900572CA0 /* ProjectsView.swift */,
 				D0A7C966260D4351009AFCA5 /* ProjectCell.swift */,
 				D0F06A9D260EB23C00BEF9F5 /* CreateProjectWindow.swift */,
+				D07CEDD9260D795100526E2F /* ProjectManager.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -248,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				D0E49376260ADDAC00572CA0 /* TimerManager.swift */,
-				D07CEDD9260D795100526E2F /* ProjectManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D0E49399260C0E0900572CA0 /* ProjectsView.swift in Sources */,
 				D07CEDDA260D795100526E2F /* ProjectManager.swift in Sources */,
 				D0623BDC25FBEE4100A1EFEF /* TimerController.swift in Sources */,
+				D079EFFB261AC7420097C773 /* UIColor+Extension.swift in Sources */,
 				D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */,
 				D0623BD825FBEE4100A1EFEF /* AppDelegate.swift in Sources */,
 				D0E49387260C065C00572CA0 /* ProjectsController.swift in Sources */,

@@ -8,15 +8,14 @@
 import UIKit
 
 class ProjectsDataSource: NSObject, UITableViewDataSource {
-    let projects = MockData.mockProjects
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MockData.mockProjects.count
+        return Data.projects.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProjectCell
-        cell.setup(projects[indexPath.row])
+        cell.setup(Data.projects[indexPath.row])
         return cell
     }
 }

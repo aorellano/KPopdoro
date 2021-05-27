@@ -46,7 +46,7 @@ class HomeView: UIView {
     }
     
     private func positionBottomButton() {
-        bottomButton.add(theImage: "play")
+        bottomButton.add(theImage: "plus")
         addSubview(bottomButton)
         NSLayoutConstraint.activate([
             bottomButton.centerXAnchor.constraint(equalTo: centerXAnchor),

@@ -27,7 +27,7 @@ class ProjectsView: UIView {
     }
     
     private func setupAddButton() {
-        let image = UIImage(named: "play")
+        let image = UIImage(named: "plus")
         addButton.setImage(image, for: .normal)
         addButton.setTitle(" New Project", for: .normal)
         addButton.setTitleColor(Theme.textColor, for: .normal)
@@ -36,7 +36,7 @@ class ProjectsView: UIView {
     }
     
     private func positionAddButton() {
-        addButton.add(theImage: "play")
+        addButton.add(theImage: "plus")
         addSubview(addButton)
         
         NSLayoutConstraint.activate([

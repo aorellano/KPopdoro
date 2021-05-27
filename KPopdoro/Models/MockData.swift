@@ -9,11 +9,14 @@ import Foundation
 
 //provides mockdata for when app is first launched
 class MockData {
-    private(set) static var mockProjects = [
-        Project(title: "KPopdoro", color: .purple),
-        Project(title: "Working Out", color: .green),
-        Project(title: "Calculus", color: .red)
-    ]
+    static func createMockProjects() -> [Project] {
+        let projects = [
+            Project(title: "KPopdoro", color: .purple),
+            Project(title: "Working Out", color: .green),
+            Project(title: "Calculus", color: .red)
+        ]
+        return projects
+    }
     
     private init(){}
 }

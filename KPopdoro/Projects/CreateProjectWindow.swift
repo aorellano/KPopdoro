@@ -32,7 +32,7 @@ class CreateProjectWindow: UIView {
     
     private func setupContainerView() {
         containerView.backgroundColor = Theme.accentColor
-        containerView.layer.cornerRadius = 30
+        containerView.layer.cornerRadius = 20
         containerView.translatesAutoresizingMaskIntoConstraints = false
         positionContainerView()
     }
@@ -64,7 +64,7 @@ class CreateProjectWindow: UIView {
     }
     
     private func setupTextField() {
-        textField.attributedPlaceholder = NSAttributedString(string: "Enter project", attributes: [NSAttributedString.Key.foregroundColor: Theme.cancelButtonColor])
+        textField.attributedPlaceholder = NSAttributedString(string: "Enter project name", attributes: [NSAttributedString.Key.foregroundColor: Theme.cancelButtonColor])
         textField.borderStyle = .roundedRect
         textField.backgroundColor = Theme.textFieldColor
         textField.textColor = Theme.textColor
@@ -85,7 +85,7 @@ class CreateProjectWindow: UIView {
     private func setupCancelButton() {
         cancelButton.setTitle("Cancel", for: .normal)
         cancelButton.backgroundColor = Theme.cancelButtonColor
-        cancelButton.layer.cornerRadius = 20
+        cancelButton.layer.cornerRadius = 10
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
         cancelButton.addShadow()
         
@@ -105,7 +105,7 @@ class CreateProjectWindow: UIView {
     private func setupCreateButton() {
         createButton.setTitle("Create", for: .normal)
         createButton.backgroundColor = Theme.tintColorPink
-        createButton.layer.cornerRadius = 20
+        createButton.layer.cornerRadius = 10
         createButton.addShadow()
         createButton.translatesAutoresizingMaskIntoConstraints = false
         positionCreateButton()

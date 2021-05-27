@@ -36,5 +36,130 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE1C457C-60EF-4C14-92FA-6D1AC9A8AB33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KPopdoro/Projects/ProjectsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "createProject()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KPopdoro/Projects/ProjectsDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ProjectsDataSource"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41 - 85e240c62eb59c9c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KPopdoro.ProjectsDataSource.projects.getter : Swift.Array&lt;KPopdoro.Project&gt;"
+                  moduleName = "KPopdoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexisorellano/Documents/KPopdoro/KPopdoro/Projects/ProjectsDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41 - 82aaf8a5c5df8088"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KPopdoro.ProjectsDataSource.projects.setter : Swift.Array&lt;KPopdoro.Project&gt;"
+                  moduleName = "KPopdoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexisorellano/Documents/KPopdoro/KPopdoro/Projects/ProjectsDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41 - 8cc646bcc2410bca"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KPopdoro.ProjectsDataSource.projects.modify : Swift.Array&lt;KPopdoro.Project&gt;"
+                  moduleName = "KPopdoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexisorellano/Documents/KPopdoro/KPopdoro/Projects/ProjectsDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41 - 4bfd5b1ab9c209c7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KPopdoro.ProjectsDataSource.projects.modify : Swift.Array&lt;KPopdoro.Project&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "KPopdoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexisorellano/Documents/KPopdoro/KPopdoro/Projects/ProjectsDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "D68CA74F-C51D-4C7D-A2A7-764DB60B0A41 - f06ac6009565edd1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KPopdoro.ProjectsDataSource.init() -&gt; KPopdoro.ProjectsDataSource"
+                  moduleName = "KPopdoro"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexisorellano/Documents/KPopdoro/KPopdoro/Projects/ProjectsDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63C1527F-2D48-4AD8-9574-6D8EBD048BE2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KPopdoro/Managers/ProjectManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "readProjects()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
