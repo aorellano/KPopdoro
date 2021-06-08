@@ -33,25 +33,18 @@ class ProjectsController: UIViewController {
     }
     
     @objc func addButtonPressed() {
-        let vc = NewProjectController()
-        let navController = UINavigationController(rootViewController: vc)
-        present(navController, animated: true, completion: nil)
+        //nothing as of rn
     }
     
     
     @objc func createProject() {
-        if let projectTitle = projectsView.projectWindow.textField.text  {
-            let color = UIColor.random()
-            ProjectManager.createProject(project: Project(title: projectTitle, color: color))
-            addProject()
-        }
+        //
     }
     
     private func addProject() {
-        projectsView.projectWindow.isHidden = true
-        projectsView.tableView.performBatchUpdates({
-            projectsView.tableView.insertRows(at: [IndexPath(row: ProjectManager.readProjects().count - 1, section: 0)], with: .automatic)
-        }, completion: nil)
+//        projectsView.tableView.performBatchUpdates({
+//            projectsView.tableView.insertRows(at: [IndexPath(row: ProjectManager.readProjects().count - 1, section: 0)], with: .automatic)
+//        }, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

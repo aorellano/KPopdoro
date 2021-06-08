@@ -10,7 +10,6 @@ import UIKit
 class ProjectsView: UIView {
     var tableView = UITableView()
     var addButton = BottomButton()
-    var projectWindow = CreateProjectWindow()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +22,6 @@ class ProjectsView: UIView {
         
         positionAddButton()
         setupTableView()
-        setupProjectWindow()
     }
     
     private func setupAddButton() {
@@ -41,7 +39,7 @@ class ProjectsView: UIView {
         
         NSLayoutConstraint.activate([
             addButton.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            addButton.centerXAnchor.constraint(equalTo: centerXAnchor, constant: -20)
+            addButton.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
 
@@ -59,16 +57,6 @@ class ProjectsView: UIView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: addButton.topAnchor)
-        ])
-    }
-    
-    private func setupProjectWindow() {
-        addSubview(projectWindow)
-        NSLayoutConstraint.activate([
-            projectWindow.topAnchor.constraint(equalTo: topAnchor),
-            projectWindow.leadingAnchor.constraint(equalTo: leadingAnchor),
-            projectWindow.trailingAnchor.constraint(equalTo: trailingAnchor),
-            projectWindow.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
     

@@ -9,14 +9,18 @@ import UIKit
 
 class ProjectCell: UITableViewCell {
     private var titleLabel = UILabel()
+    private var textField = UITextField()
     private var colorView = UIView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         backgroundColor = Theme.backgroundColor
+        textField.isHidden = true
+        textField.delegate = self
         setupColorView()
         setupTitleLabel()
+        setupTextField()
     }
     
     func setup(_ project: Project) {
@@ -45,7 +49,25 @@ class ProjectCell: UITableViewCell {
     private func setupTitleLabel() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textColor = Theme.textColor
+        titleLabel.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelPressed))
+        tapGesture.numberOfTapsRequired = 1
+        titleLabel.addGestureRecognizer(tapGesture)
         positionTitleLabel()
+    }
+    
+    private func setupTextField() {
+        textField.attributedPlaceholder = NSAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: Theme.cancelButtonColor])
+        textField.backgroundColor = Theme.accentColor
+        textField.textColor = Theme.textColor
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        positionTextField()
+    }
+    
+    @objc func labelPressed() {
+        titleLabel.isHidden = true
+        textField.isHidden = false
+        textField.text = titleLabel.text
     }
     
     private func positionTitleLabel() {
@@ -57,6 +79,14 @@ class ProjectCell: UITableViewCell {
         ])
     }
     
+    private func positionTextField() {
+        contentView.addSubview(textField)
+        
+        NSLayoutConstraint.activate([
+            textField.leadingAnchor.constraint(equalTo: colorView.trailingAnchor, constant: 20),
+            textField.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+    }
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -65,8 +95,17 @@ class ProjectCell: UITableViewCell {
         contentView.layer.cornerRadius = 10
     }
     
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension ProjectCell: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField.isHidden = true
+        titleLabel.isHidden = false
+        titleLabel.text = textField.text
+        return true
     }
 }
