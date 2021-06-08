@@ -26,6 +26,7 @@
 		D0A7C957260C5707009AFCA5 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C956260C5707009AFCA5 /* Project.swift */; };
 		D0A7C95D260C6498009AFCA5 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C95C260C6498009AFCA5 /* MockData.swift */; };
 		D0A7C967260D4351009AFCA5 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A7C966260D4351009AFCA5 /* ProjectCell.swift */; };
+		D0B3431326700D2C00CA0B51 /* NewProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3431226700D2C00CA0B51 /* NewProjectController.swift */; };
 		D0E4934C26055A5E00572CA0 /* IdolController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4934B26055A5E00572CA0 /* IdolController.swift */; };
 		D0E4935126055A9A00572CA0 /* IdolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935026055A9A00572CA0 /* IdolView.swift */; };
 		D0E4935626055B6400572CA0 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4935526055B6400572CA0 /* Theme.swift */; };
@@ -84,6 +85,7 @@
 		D0A7C956260C5707009AFCA5 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		D0A7C95C260C6498009AFCA5 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D0A7C966260D4351009AFCA5 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		D0B3431226700D2C00CA0B51 /* NewProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectController.swift; sourceTree = "<group>"; };
 		D0E4934B26055A5E00572CA0 /* IdolController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolController.swift; sourceTree = "<group>"; };
 		D0E4935026055A9A00572CA0 /* IdolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolView.swift; sourceTree = "<group>"; };
 		D0E4935526055B6400572CA0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				D0A7C966260D4351009AFCA5 /* ProjectCell.swift */,
 				D0F06A9D260EB23C00BEF9F5 /* CreateProjectWindow.swift */,
 				D07CEDD9260D795100526E2F /* ProjectManager.swift */,
+				D0B3431226700D2C00CA0B51 /* NewProjectController.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				D0A7C952260C3D4A009AFCA5 /* ProjectsDataSource.swift in Sources */,
 				D0E4935626055B6400572CA0 /* Theme.swift in Sources */,
 				D0E49367260A9AF600572CA0 /* HomeController.swift in Sources */,
+				D0B3431326700D2C00CA0B51 /* NewProjectController.swift in Sources */,
 				D0623BDA25FBEE4100A1EFEF /* SceneDelegate.swift in Sources */,
 				D0E49371260AA59200572CA0 /* ViewController+Extension.swift in Sources */,
 				D0F06A9E260EB23C00BEF9F5 /* CreateProjectWindow.swift in Sources */,

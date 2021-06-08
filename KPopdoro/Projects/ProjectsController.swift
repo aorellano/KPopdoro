@@ -30,17 +30,14 @@ class ProjectsController: UIViewController {
     
     private func setupActions() {
         projectsView.addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
-        projectsView.projectWindow.cancelButton.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
-        projectsView.projectWindow.createButton.addTarget(self, action: #selector(createProject), for: .touchUpInside)
     }
     
     @objc func addButtonPressed() {
-        projectsView.projectWindow.isHidden = false
+        let vc = NewProjectController()
+        let navController = UINavigationController(rootViewController: vc)
+        present(navController, animated: true, completion: nil)
     }
     
-    @objc func cancelButtonPressed() {
-        projectsView.projectWindow.isHidden = true
-    }
     
     @objc func createProject() {
         if let projectTitle = projectsView.projectWindow.textField.text  {
